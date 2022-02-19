@@ -175,14 +175,14 @@ export default {
       error: [],
       email: "",
       password: "",
-      message: "",
+      message: "Email and Password required",
     };
   },
   components: { Popup },
   methods: {
     login(e) {
       if (this.email && this.password) {
-        console.log("login");
+        this.message = "login success";
       }
       this.error = [];
       if (!this.email) {
